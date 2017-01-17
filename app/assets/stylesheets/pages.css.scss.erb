@@ -1,0 +1,300 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Glabal */
+.home-mtitle {
+  font-size: 2em;
+  font-family: 'burbank-small-bold';
+  line-height: 1.4em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Home Wrapper */
+
+.qp-home-wrapper{
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)),  url(<%= asset_path 'todos2.png' %>) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    min-height: 90vh;
+}
+
+.qp-home-container {
+  position: relative;
+  text-align: center;
+  height: 90vh
+}
+
+.qp-home-info {
+  width: 100%;
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.qp-home-wrapper h1{
+  font-family: 'burbank-small-bold';
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.4em
+}
+
+.qp-home-wrapper h2 {
+  font-family: 'apercu-regular', sans-serif;
+  color: #fff;
+  font-size: 1.5em !important;
+  line-height: 1.4em
+}
+
+.city-dropdown{
+  background-color: transparent !important;
+  border: #fff 1px solid !important;
+  margin-top: 5px;
+}
+
+.search-btn{
+  margin-top: 35px;
+  background-color: rgb(86,160,192);
+  padding: 0px 25px;
+}
+
+.search-btn:hover{
+  background-color: rgb(86,160,192);
+}
+
+
+
+/* How it works */
+
+.qp-hworks {
+  padding: 25px 50px;
+  text-align: center;
+}
+
+
+.qp-hworks h2 {
+  font-size: 1.75em;
+  font-family: 'burbank-small-bold';
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.qp-hworks p {
+  color: #555555;
+  line-height: 20px;
+  font-size: 1em;
+  font-family: 'apercu-regular', sans-serif;
+  font-weight: 400;
+}
+
+
+/* Benefits */
+
+.qp-benefits{
+  padding: 50px 0 30px 0;
+  background-color: #45b1e2;
+  background-image: url('../img/pattern.png')
+}
+
+.card-holder-fix{
+  text-align: center;
+}
+
+.card-img-fix {
+  width: 50px !important;
+  text-align: center;
+  display: inline-block !important;
+  margin-top: 15px
+}
+
+.card-content p {
+  color: #555555 !important;
+  line-height: 20px;
+  font-size: 1em;
+  font-family: 'apercu-regular', sans-serif;
+  font-weight: 400;
+}
+
+/* CLients */
+
+.qp-clients{
+  padding: 50px 0;
+}
+
+.client-bg-img{
+  width: 100% !important;
+}
+
+.col-fix{
+  padding: 0 !important; 
+}
+
+.bg, .overlay {
+  text-align: center;
+}
+
+img, .overlay {
+  transition: .3s all;
+}
+
+.bg {
+  float: left;
+  max-width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg img {
+  max-width: 100%;
+  margin-bottom: -8px;
+}
+.bg .overlay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  opacity: 0;
+  line-height: 20px;
+  font-family: 'apercu-regular', sans-serif;
+  font-weight: 400;
+}
+
+.overlay p {
+   font-size: 0.75em;
+}
+
+.bg:hover .overlay {
+  opacity: 1;
+}
+
+.bg:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+
+/* QP Ready */
+
+.qp-ready {
+  background-color: #f1f5f8;
+  padding: 50px 0;
+}
+
+/* Footer */
+
+.page-footer{
+  background-image: url('../img/pattern2.png');
+  background-color: #333 !important;
+  margin-top: 0 !important;
+}
+
+
+
+/* Footer */
+
+.page-footer {
+  text-align: center;
+}
+
+
+.community-icons-footer a{
+  color: #fff !important;
+}
+.copyright{
+  color: #fff !important;
+}
+
+#social-fb-footer:hover {
+    color: #3B5998 !important;
+}
+
+#social-tw-footer:hover {
+    color: #4099FF !important;
+}
+
+#social-yt-footer:hover {
+    color: #d34836 !important;
+}
+
+#social-in-footer:hover {
+    color: #3f729b !important;
+}
+
+#social-em-footer:hover {
+    
+    color: #f39c12 !important;
+}
+
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Smartphones  ----------- */
+@media only screen and (max-width : 470px) {
+/* Styles */
+
+  
+}
+
+
+
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 768px)  {
+
+  /***  Home ***/
+  .qp-home-info {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+ 
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+    /*** Clients ***/
+  .img1{
+    height: 250px;
+  }
+
+  .img2 {
+    height: 300px;
+  }
+
+  .img3{
+    height: 350px;
+  }
+
+  .img4 {
+    height: 200px;
+  }
+}
+
+
+
+
+

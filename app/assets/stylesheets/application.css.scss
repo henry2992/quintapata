@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize";
+
+/* Fonts */
+@font-face {
+    font-family: apercu-regular;
+    src: url('/assets/apercu_regular_pro.otf');
+}
+
+@font-face {
+    font-family: burbank-small-bold;
+    src: url('/assets/burbank_small_bold.otf');
+}
+
+html {
+  font-size: 18px;
+}
+
+
+/* General Styles */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.qp-grey {
+  color: rgb(58,58,58);
+}
+
+.qp-blue {
+  color: rgb(86,160,192) !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.mobile-hide{
+  display: none;
+}
+
+
+
+/* Navigation */
+
+.quintapata-nav {
+  height: 75px;
+}
+
+.quintapata-nav div{
+  background-color: #fff;
+}
+
+.quintapata-logo{
+  width: 200px;
+  margin-top: 10px;
+}
+
+/******************************************************************************/
+/******************************** Media Queries ******************************/
+/****************************************************************************/
+
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 600px)  {
+
+  .mobile-hide{
+    display: block;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+
+
