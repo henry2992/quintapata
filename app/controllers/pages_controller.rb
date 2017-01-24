@@ -1,4 +1,9 @@
 class PagesController < ApplicationController
-  def Home
+  
+  def home
   end
+
+  def vet_join
+  end
+
 end

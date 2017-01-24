@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/* Glabal */
+/* Global */
 .home-mtitle {
   font-size: 2em;
   font-family: 'burbank-small-bold';
@@ -31,8 +31,8 @@
 .qp-home-info {
   width: 100%;
   position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .qp-home-wrapper h1{
@@ -298,3 +298,48 @@ img, .overlay {
 
 
 
+/*************************************************************************************/
+/****************************** VET JOIN ********************************************/
+/***********************************************************************************/
+
+
+.join-landing-bg{
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)),  url(<%= asset_path 'unetebg.jpg' %>) ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center; 
+  min-height: 90vh;
+}
+
+.join-home-container {
+  position: relative;
+  text-align: center;
+  height: 90vh
+}
+
+.join-home-info {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.join-home-info h1 {
+  font-family: 'burbank-small-bold';
+  line-height: 1.25;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #404040;
+  font-size: 1.75em;
+  margin: 0;
+}
+
+.join-home-info p {
+  font-family: 'apercu-regular', sans-serif;
+  line-height: 1.25;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #404040;
+  font-size: 1.25em;
+  color: white;
+}
