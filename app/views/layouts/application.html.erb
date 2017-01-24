@@ -4,6 +4,7 @@
     <title>Quintapata</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="lCIF6RR831o4a9UxebybHgtnuHKA0LoVbnemnIGWWzA" />
 
     <%= csrf_meta_tags %>
 
@@ -14,6 +15,18 @@
   </head>
 
   <body>
+
+     <!-- Navigation Bar -->
+    <div class="navigation-bar-quintapata">
+      <nav class="quintapata-nav">
+          <div class="nav-wrapper ">
+            <a href="#" class="brand-logo center">
+              <%= image_tag "logo2.png", class: 'quintapata-logo' %>
+            </a>
+          </div>
+      </nav>
+    </div>
+
     <%= yield %>
   </body>
 </html>
