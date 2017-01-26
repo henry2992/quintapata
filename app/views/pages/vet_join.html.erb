@@ -23,19 +23,30 @@
     <div class="row">
 
       <div class="col m4">
-        2
-        <%= image_tag "production.png", class: 'quintapata-logo' %>
+        <div class='join-adv-info'>
+          <%= image_tag "promotion.png" %>
+          <h1> Promociona tu negocio</h1>
+        </div>
+
+        <p>Mejora tu posicionamiento en linea. Haz que tus futuros clientes te encuentren mas facil.</p>
+
       </div>
 
       <div class="col m4">
-        2
-        <%= image_tag "promotion.png", class: 'quintapata-logo' %>
+        <div , class='join-adv-info'>
+          <%= image_tag "email.png", class: 'join-adv-img' %>
+          <h1 class="join-adv-title"> Conoce a tu cliente</h1>
+        </div>
+        <p>Al tener más información de las mascotas y tu cliente, puedes construir una relación más cercana.</p>
       </div>
 
       <div class="col m4">
-        2
-        <%= image_tag "handshake.png", class: 'quintapata-logo' %>
-      
+        <div class='join-adv-info'>
+          <%= image_tag "analytics.png", class: 'join-adv-img' %>
+          <h1 class="join-adv-title"> Incrementa tus ventas</h1>
+         
+        </div>
+        <p>Promociona tu negocio e incrementar tus ventas ofreciendo cupones y descuentos a tus clientes.
       </div>
 
     </div>
@@ -44,18 +55,27 @@
     <div class="row">
     
       <div class="col m4">
-        2
-        <%= image_tag "analytics.png", class: 'quintapata-logo' %>
+        <div class='join-adv-info'>
+          <%= image_tag "calendar.png", class: 'join-adv-img' %>
+          <h1 class="join-adv-title"> Organizate Mejor</h1>
+        </div>
+        <p>Con nuestras reservas en línea, organiza mejor tu tiempo y a tus clientes.</p>
       </div>
 
       <div class="col m4">
-        2
-        <%= image_tag "calendar.png", class: 'quintapata-logo' %>
+        <div class='join-adv-info'>
+          <%= image_tag "handshake.png", class: 'join-adv-img' %>
+          <h1 class="join-adv-title"> Aumenta tus visitas</h1>
+        </div>
+        <p>Reduce la cantidad de visitas que olvidan tus clientes y mantenlos volviendo más seguido.</p>
       </div>
 
       <div class="col m4">
-        2
-        <%= image_tag "email.png", class: 'quintapata-logo' %>
+        <div class='join-adv-info'>
+          <%= image_tag "production.png", class: 'join-adv-img' %>
+          <h1 class="join-adv-title"> Simplifica tu negocio</h1>
+        </div>
+        <p>Quintapata te ayuda en todo el trabajo pesado, para que te enfoques en lo que realmente es importante para tu negocio.</p>
       </div>
 
     </div>
@@ -67,6 +87,40 @@
 
 </div>
 
+<!-- Survey -->
+<div class="containers">
+  
+ 
+  <%= form_tag surveys_create_path  do %>
+
+    <%= label_tag(:name, "Nombre:") %>
+    <%= text_field_tag(:name) %>
+
+    <%= label_tag(:email, "Email:") %>
+    <%= text_field_tag(:email) %>
+
+    <%= label_tag(:phone, "Telefono:") %>
+    <%= text_field_tag(:name) %>
+
+    <%= label_tag(:company, "Company:") %>
+    <%= text_field_tag(:company) %>
+
+    <%= label_tag(:services, "Servicios:") %>
+
+    <% services = ['Veterinaria' , 'Peluqueria']%>
+
+    <% services.each do |item| %>
+      <br>
+      <tr>
+        <td><%= check_box_tag "items[]", item%></td>
+        <td><%= item %></td>
+      </tr>
+    <% end %>
+    <br>
+    <%= submit_tag("Create") %>
+  <% end %>
+
+</div>
 
 
 

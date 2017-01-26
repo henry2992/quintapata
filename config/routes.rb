@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  post 'surveys/create'
+
   # Pages Controller
   root 'pages#home'
   get '/unete', to: 'pages#vet_join'
