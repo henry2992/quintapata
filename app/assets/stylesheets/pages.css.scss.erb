@@ -320,7 +320,7 @@ img, .overlay {
 .join-home-info {
   width: 100%;
   position: absolute;
-  top: 30%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -330,7 +330,7 @@ img, .overlay {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   color: #404040;
-  font-size: 1.75em;
+  font-size: 1.25em;
   margin: 0;
 }
 
@@ -340,7 +340,7 @@ img, .overlay {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   color: #404040;
-  font-size: 1.25em;
+  font-size: 0.75em;
   color: white;
 }
 
@@ -351,7 +351,7 @@ img, .overlay {
 
 .join-adv-info{
   text-align: center;
-  height: 90px;
+  height: 95px;
 }
 
 .join-adv-info h1{
@@ -360,7 +360,7 @@ img, .overlay {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   color: #404040;
-  font-size: 1em;
+  font-size: 1.25em;
   margin: 0;
 }
 
@@ -368,10 +368,10 @@ img, .overlay {
   width: 70px;
 }
 
-.join-adv-info p{
+.join-info p{
   font-family: 'apercu-regular', sans-serif;
   line-height: 1.25;
-  font-size: 0.75em;
+  font-size: 1em !important;
 }
 
 #services {
@@ -390,4 +390,52 @@ img, .overlay {
 
 .check_box_fix label{
   top: 0 !important;
+}
+
+.join-form-title {
+  line-height: 1.25;
+  color: #404040;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+
+/******************* Media Queries ******************/
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+
+/* Smartphones  ----------- */
+@media only screen and (max-width : 470px) {
+/* Styles */
+
+  
+}
+
+
+/* Medium size screens  ----------- */
+@media only screen and (min-width : 600px)  {
+  .join-home-info h1 {
+    font-size: 1.75em;
+  }
+
+  .join-home-info p {
+    font-size: 1.25em;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+
 }

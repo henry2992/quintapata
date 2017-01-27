@@ -1,7 +1,8 @@
 
 <div class="join-landing-bg">
   
-   <div class="join-home-container">
+  <div class="container">
+    <div class="join-home-container">
         <div class="join-home-info">
 
             <h1>Mantén a tus clientes felices <br> y tu negocio creciendo</h1>
@@ -13,7 +14,7 @@
         
         </div>
     </div>
-
+  </div>
 </div>
 
 <div class="join-info">
@@ -93,7 +94,10 @@
 <div class="join-survey-wrapper">
 
   <div class="container">
-    
+
+    <h1 class="join-form-title ">Listo para empezar?</h1>
+    <p>Llena el siguiente formulario y nosotros nos pondremos en contacto.</p>
+
     <div class="row">
 
       <%= form_tag surveys_create_path, class: 'col s12'  do %>
@@ -122,7 +126,7 @@
 
           <div class="input-field col s12 check_box_fix"> 
             <%= label_tag(:services, "Servicios:") %>
-            <% ['Veterinaria' , 'Peluqueria'].each do |item| %>
+            <% ['Veterinaria' , 'Peluqueria', 'Hospedaje/ Pet Care', 'Funeraria', 'Pet Shop', 'Adiestramiento'].each do |item| %>
               <br>
               <tr>
                 <td><%= check_box_tag "items[]", item%></td>
